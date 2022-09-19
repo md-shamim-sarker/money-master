@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Money Master Practice</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <img class="heading-image" src="./images/heading.png" alt="heading">
+        </header>
+        <div class="main">
+            <div class="left">
+                <img src="./images/cover_photo.png" alt="cover">
+            </div>
+            <div class="right">
+                <table>
+                    <tr>
+                        <td colspan="2" class="text-center">
+                            <h2>Income</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Income:</td>
+                        <td><input type="text" name="income" id="income"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-center">
+                            <h2>Expenses</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Food:</td>
+                        <td><input type="text" name="food" id="food"></td>
+                    </tr>
+                    <tr>
+                        <td>Rent:</td>
+                        <td><input type="text" name="rent" id="rent"></td>
+                    </tr>
+                    <tr>
+                        <td>Clothes:</td>
+                        <td><input type="text" name="clothes" id="clothes"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-center">
+                            <button class="simple-button" id="calculate-button">Calculate</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-center">
+                            <h2>Total Expenses: <span id="total-expenses">0</span></h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-center">
+                            <h2>Balance: <span id="balance">0</span></h2>
+                        </td>
+                    </tr>
+
+                </table>
+                <table>
+                    <tr>
+                        <td class="text-center">
+                            Save: <input type="text" name="save" id="save" class="w-50">
+                            <span class="percent">%</span> <button class="simple-button" id="save-button">Save</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <h2>Saving Amount: <span id="savings"></span></h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <h2>Remaining Balance: <span id="remainBalance"></span></h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
